@@ -14,11 +14,13 @@
   },
   "build": {
     "appId": "com.firstsolar.maintenancelogger",
-    "productName": "Hệ thống Bảo dưỡng",
+    "productName": "HeThongBaoDuong",
     "files": [
       "main.js",
       "preload.js",
       "index.html",
+      "index.css",
+      "renderer.js",
       "vendor/**/*"
     ],
     "directories": {
@@ -26,6 +28,7 @@
     },
     "win": {
       "target": "nsis"
-    }
+    },
+    "publish": null
   }
 }
