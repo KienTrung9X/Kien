@@ -1,0 +1,7 @@
+// renderer.js
+document.addEventListener('DOMContentLoaded', () => {
+  const app = document.getElementById('app')
+  if (app) {
+    app.innerHTML = '<h2>Ứng dụng Electron chạy OK</h2>'
+  }
+})
