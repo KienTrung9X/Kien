@@ -1,0 +1,31 @@
+{
+  "name": "maintenance-logger",
+  "version": "1.0.0",
+  "description": "Hệ thống Ghi nhận Bảo dưỡng",
+  "main": "main.js",
+  "author": "Đinh Tấn Tho",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.firstsolar.maintenancelogger",
+    "productName": "Hệ thống Bảo dưỡng",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "vendor/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
