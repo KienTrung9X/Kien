@@ -6,20 +6,21 @@
   "author": "Đinh Tấn Tho",
   "scripts": {
     "start": "electron .",
+    "dev": "electron .",
     "build": "electron-builder"
   },
   "devDependencies": {
     "electron": "^28.2.3",
-    "electron-builder": "^24.9.1"
+    "electron-builder": "^24.9.1",
+    "electron-reload": "^2.0.0-alpha.1"
   },
   "build": {
     "appId": "com.firstsolar.maintenancelogger",
-    "productName": "HeThongBaoDuong",
+    "productName": "Hệ thống Bảo dưỡng",
     "files": [
       "main.js",
       "preload.js",
       "index.html",
-      "index.css",
       "renderer.js",
       "vendor/**/*"
     ],
@@ -28,7 +29,6 @@
     },
     "win": {
       "target": "nsis"
-    },
-    "publish": null
+    }
   }
 }
